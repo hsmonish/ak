@@ -1,0 +1,58 @@
+﻿Prompts,Path_Item,Call
+Gets a indexed search result of Manufacturing Item,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/search,get
+Gets a Manufacturing Item,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID},get
+Modifies the Manufacturing Item attributes,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID},patch
+Delete the Manufacturing Item,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID},delete
+"Get scoped, partial scoped and resulting manufacturing item references from Engineering Item",/resources/v1/modeler/dsmfg/invoke/dsmfg:getMfgItemsFromEngItem,post
+Creates Manufacturing Items,/resources/v1/modeler/dsmfg/dsmfg:MfgItem,post
+Locate or find set of Manufacturing Items dsmfg:MfgItem based on the matched search criteria and other filter criteria,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/locate,post
+Bulk reconnect of scope and resulting products for the corresponding specified Mfg Item,/resources/v1/modeler/dsmfg/invoke/dsmfg:reconnect,post
+Expand specified Manufacturing Item dsmfg:MfgItem to retrive  all its references and instances,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/expand,post
+Retrieve Manufacturing Item realized changes with its realized activity in the change,/resources/v1/modeler/dsmfg/invoke/dsmfg:getRealizedChanges,post
+Gets multiple Manufacturing Items which are Indexed,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/bulkfetch,post
+Gets all the Manufacturing Item Instances,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:MfgItemInstance,get
+Create Manufacturing Item Instance,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:MfgItemInstance,post
+Gets a Manufacturing Item Instance,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{PID}/dsmfg:MfgItemInstance/{ID},get
+Modifies the Manufacturing Item Instance attributes,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{PID}/dsmfg:MfgItemInstance/{ID},patch
+Replace the Manufacturing Item Instance,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{PID}/dsmfg:MfgItemInstance/{ID}/replace,post
+Get all the Manufacturing Item Instances from the given specified Engineering Item occurrence having implement links,/resources/v1/modeler/dsmfg/invoke/dsmfg:getMfgItemInstanceFromImplementedEngOccurrence,post
+Detach Manufacturing item instances from an Manufacturing Item version,/resources/v1/modeler/dsmfg/invoke/dsmfg:detachMfgItemInstances,post
+Get Multiple  Manufacturing Item Instances which are Indexed,/resources/v1/modeler/dsmfg/dsmfg:MfgItemInstance/bulkFetch,post
+Gets all the resulting Engineering Item from the Manufacturing reference dsmfg:MfgItem,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:ResultingEngItem,get
+Creates Resulting Engineering Item Link to an Engineering Item,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:ResultingEngItem,post
+Gets specific Resulting Engineering Items,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:ResultingEngItem/{PID},get
+Modifies the Resulting Eng Item Link attributes,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:ResultingEngItem/{PID},patch
+Delete the Resulting EngItem Link to Engineering Item,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:ResultingEngItem/{PID},delete
+Gets a Scoped Engineering Item of an dsmfg:MfgItem,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:ScopeEngItem,get
+Service to attach a Scope Engineering Item to a Manufacturing Item reference,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:ScopeEngItem/attach,post
+Service to detach a Scope Engineering Item from a Manufacturing Item reference,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:ScopeEngItem/detach,post
+Service to reconnect a Scope Engineering Item to a Manufacturing Item reference,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:ScopeEngItem/set/reconnect,post
+Gets all the Assignment filters from the Manufacturing reference dsmfg:MfgItem,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:AssignmentFilter,get
+Service to attach assignment filters (list of engineering occurrences) to a Manufacturing Item reference,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:AssignmentFilter/attach,post
+Service to detach AssignmentFilter Link (list of engineering Occurrences) from an single Manufacturing Item,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:AssignmentFilter/detach,post
+Locate and Get Manufacturing Item from the Assignment filter with the specified engineering occurrences,/resources/v1/modeler/dsmfg/dsmfg:AssignmentFilter/locate,post
+Gets an Implemented Engineering Item Instances Occurrence,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{PID}/dsmfg:MfgItemInstance/{ID}/dsmfg:ImplementedEngOccurrence,get
+Service to attach implemented Engineering Item Occurrence to an single Manufacturing Item instance,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{PID}/dsmfg:MfgItemInstance/{ID}/dsmfg:ImplementedEngOccurrence/attach,post
+Service to detach implemented Engineering Item Occurrence from an single Manufacturing Item instance,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{PID}/dsmfg:MfgItemInstance/{ID}/dsmfg:ImplementedEngOccurrence/detach,post
+Gets the Partial scoped Engineering Item from the Manufacturing reference dsmfg:MfgItem,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:PartialScopeEngItem,get
+Service to attach a Partial Scope Engineering Item to a Manufacturing Item reference,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:PartialScopeEngItem/attach,post
+Service to detach a Scope Engineering Item from a Manufacturing Item reference,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:PartialScopeEngItem/detach,post
+Get specified assigned requirement connection for the specified manufacturing item,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:AssignedRequirement/{PID},get
+Delete the specified assigned requirement Link,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:AssignedRequirement/{PID},delete
+Gets all the assigned Requirement connections for the specified manufacturing item,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:AssignedRequirement,get
+Creates assigned requirement link between manufacturing Item and specified requirement,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:AssignedRequirement,post
+Get specified requirement specification connection for the specified manufacturing item,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:ScopeRequirementSpec/{PID},get
+Delete the specified requirement specification Link,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:ScopeRequirementSpec/{PID},delete
+Gets all the requirement specification connections for the specified manufacturing item,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:ScopeRequirementSpec,get
+Creates requirement specification link between manufacturing Item and specified requirement,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dsmfg:ScopeRequirementSpec,post
+Activate the Change Control,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dslc:changeControl,post
+Gets a Change Control of an dsmfg:MfgItem,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dslc:changeControl,get
+Deactivate the Change Control,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dslc:changeControl,delete
+Modifies Configuration Information of configured object,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dscfg:Configured,patch
+Gets a Object Configuration information,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dscfg:Configured,get
+Service to attach a list of configuration context to a single reference,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dscfg:Configured/attach,post
+Service to detach a list of configuration context from a single reference,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{ID}/dscfg:Configured/detach,post
+Gets a Instance effectivity information,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{PID}/dsmfg:MfgItemInstance/{ID}/dscfg:Filterable,get
+Service to get the Manufacturing Instance direct dependencies,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{PID}/dsmfg:MfgItemInstance/{ID}/dsmfg:Dependency,get
+Service to attach dependency constraint to a specified Manufacturing Item instance,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{PID}/dsmfg:MfgItemInstance/{ID}/dsmfg:Dependency/attach,post
+Service to detach dependency constraint from a specified Manufacturing Item instance,/resources/v1/modeler/dsmfg/dsmfg:MfgItem/{PID}/dsmfg:MfgItemInstance/{ID}/dsmfg:Dependency/detach,post
